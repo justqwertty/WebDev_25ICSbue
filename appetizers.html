@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header id="header">
         <div class="container header-container">
             <a href="index.html" class="logo">
@@ -19,14 +18,9 @@
                 <ul class="main-menu">
                     <li><a href="index.html">Home</a></li>
                     
-                    <li class="dropdown">
-                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
-                        <ul class="sub-menu">
-                            <li><a href="resume.html">Resume</a></li>
-                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
-                        </ul>
-                    </li>
                     
+                    <li><a href="signaturedishes.html">Signature Dishes</a></li>
+
                     <li><a href="blog.html">Blog</a></li>
                     
                     <li class="dropdown">
@@ -47,6 +41,13 @@
                             <li><a href="classes.html">Cooking Classes</a></li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
+                        </ul>
+                    </li>
                     
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -54,9 +55,7 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
         <section class="hero appetizers-hero">
             <div class="hero-content">
                 <h1>Signature Appetizers</h1>
@@ -64,27 +63,8 @@
             </div>
         </section>
 
-        <!-- Appetizers Section -->
         <section class="section">
             <div class="container">
-                <div class="category-filters">
-                    <input type="radio" id="all" name="category" class="category-radio" checked>
-                    <label for="all" class="category-label">All</label>
-                    
-                    <input type="radio" id="vegetarian" name="category" class="category-radio">
-                    <label for="vegetarian" class="category-label">Vegetarian</label>
-                    
-                    <input type="radio" id="quick" name="category" class="category-radio">
-                    <label for="quick" class="category-label">Quick</label>
-                    
-                    <input type="radio" id="cheese" name="category" class="category-radio">
-                    <label for="cheese" class="category-label">Cheese</label>
-                    
-                    <input type="radio" id="international" name="category" class="category-radio">
-                    <label for="international" class="category-label">International</label>
-                </div>
-
-                <!-- Featured Appetizer -->
                 <div class="featured-recipe">
                     <div class="featured-container">
                         <div class="featured-img">
@@ -106,10 +86,8 @@
                     </div>
                 </div>
 
-                <!-- Appetizers Grid -->
                 <div class="recipe-section">
                     <div class="recipes-container">
-                        <!-- Recipe 1 - Bruschetta -->
                         <div class="recipe-card" id="bruschetta">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Bruschetta" class="recipe-img">
@@ -179,8 +157,7 @@
                                 </div>
                             </div>
                         </div>
-                      
-                        <!-- Recipe 2 - Stuffed Mushrooms -->
+
                         <div class="recipe-card" id="mushrooms">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Stuffed Mushrooms" class="recipe-img">
@@ -259,8 +236,7 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Recipe 3 - Spring Rolls -->
+
                         <div class="recipe-card" id="spring-rolls">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1629115916087-7e8c114a24ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" alt="Spring Rolls" class="recipe-img">
@@ -344,7 +320,6 @@
                             </div>
                         </div>
 
-                        <!-- Recipe 4 - Truffle Arancini -->
                         <div class="recipe-card" id="truffle-arancini">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1606755456206-b25206bfa233?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Truffle Arancini" class="recipe-img">
@@ -430,7 +405,6 @@
                             </div>
                         </div>
 
-                        <!-- Recipe 5 - Bacon Wrapped Dates -->
                         <div class="recipe-card" id="bacon-dates">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Bacon Wrapped Dates" class="recipe-img">
@@ -507,7 +481,6 @@
                             </div>
                         </div>
 
-                        <!-- Recipe 6 - Spanakopita -->
                         <div class="recipe-card" id="spanakopita">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Spanakopita" class="recipe-img">
@@ -584,7 +557,6 @@
                             </div>
                         </div>
 
-                        <!-- Recipe 7 - Caprese Skewers -->
                         <div class="recipe-card" id="caprese-skewers">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Caprese Skewers" class="recipe-img">
@@ -654,7 +626,6 @@
                             </div>
                         </div>
 
-                        <!-- Recipe 8 - Crab Cakes -->
                         <div class="recipe-card" id="crab-cakes">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Crab Cakes" class="recipe-img">
@@ -732,7 +703,6 @@
                             </div>
                         </div>
 
-                        <!-- Recipe 9 - Hummus Platter -->
                         <div class="recipe-card" id="hummus-platter">
                             <div class="recipe-img-container">
                                 <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Hummus Platter" class="recipe-img">
@@ -821,7 +791,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-container">
