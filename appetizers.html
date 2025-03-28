@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Portfolio | Appetizers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                Chef's Portfolio
+            </a>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="blog.html">Blog</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="recipes.html">Recipes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="appetizers.html" class="active">Appetizers</a></li>
+                            <li><a href="main-courses.html">Main Courses</a></li>
+                            <li><a href="desserts.html">Desserts</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="catering.html">Event Catering</a></li>
+                            <li><a href="classes.html">Cooking Classes</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero appetizers-hero">
+            <div class="hero-content">
+                <h1>Signature Appetizers</h1>
+                <p>Perfect starters to impress your guests and awaken the palate</p>
+            </div>
+        </section>
+
+        <!-- Appetizers Section -->
+        <section class="section">
+            <div class="container">
+                <div class="category-filters">
+                    <input type="radio" id="all" name="category" class="category-radio" checked>
+                    <label for="all" class="category-label">All</label>
+                    
+                    <input type="radio" id="vegetarian" name="category" class="category-radio">
+                    <label for="vegetarian" class="category-label">Vegetarian</label>
+                    
+                    <input type="radio" id="quick" name="category" class="category-radio">
+                    <label for="quick" class="category-label">Quick</label>
+                    
+                    <input type="radio" id="cheese" name="category" class="category-radio">
+                    <label for="cheese" class="category-label">Cheese</label>
+                    
+                    <input type="radio" id="international" name="category" class="category-radio">
+                    <label for="international" class="category-label">International</label>
+                </div>
+
+                <!-- Featured Appetizer -->
+                <div class="featured-recipe">
+                    <div class="featured-container">
+                        <div class="featured-img">
+                            <img src="https://images.unsplash.com/photo-1606755456206-b25206bfa233?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Featured Appetizer">
+                        </div>
+                        <div class="featured-content">
+                            <span class="featured-badge">Chef's Special</span>
+                            <h2 class="featured-title">Truffle Arancini with Fontina Center</h2>
+                            <div class="featured-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="featured-description">Crispy fried risotto balls infused with black truffle and stuffed with molten fontina cheese. Served with a roasted garlic aioli that perfectly complements the earthy flavors.</p>
+                            <a href="#truffle-arancini" class="btn" style="background-color: white; color: var(--dark-green); align-self: flex-start;">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appetizers Grid -->
+                <div class="recipe-section">
+                    <div class="recipes-container">
+                        <!-- Recipe 1 - Bruschetta -->
+                        <div class="recipe-card" id="bruschetta">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Bruschetta" class="recipe-img">
+                                <span class="recipe-badge">Vegetarian</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Classic Tomato Bruschetta</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 20 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 6 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 180 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Crispy toasted bread topped with fresh tomatoes, basil, garlic, and a drizzle of aged balsamic. Perfect for summer entertaining.</p>
+                                
+                                <input type="checkbox" id="bruschetta-details" class="recipe-toggle">
+                                <label for="bruschetta-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">1 baguette, sliced</div>
+                                            <div class="ingredient-item">4 ripe tomatoes, diced</div>
+                                            <div class="ingredient-item">1/4 cup fresh basil, chopped</div>
+                                            <div class="ingredient-item">2 cloves garlic, minced</div>
+                                            <div class="ingredient-item">3 tbsp extra virgin olive oil</div>
+                                            <div class="ingredient-item">1 tbsp balsamic glaze</div>
+                                            <div class="ingredient-item">Salt and pepper to taste</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 375°F (190°C). Arrange baguette slices on a baking sheet and toast for 5-7 minutes until golden.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>In a bowl, combine tomatoes, basil, garlic, olive oil, salt, and pepper. Let sit for 10 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Top each toast with the tomato mixture and drizzle with balsamic glaze before serving.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">180</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">8g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">22g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">4g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <!-- Recipe 2 - Stuffed Mushrooms -->
+                        <div class="recipe-card" id="mushrooms">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Stuffed Mushrooms" class="recipe-img">
+                                <span class="recipe-badge">Vegetarian</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Garlic Herb Stuffed Mushrooms</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 35 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 8 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 120 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Creamy, garlicky stuffed mushrooms with a crispy breadcrumb topping. An elegant appetizer that's always a crowd-pleaser.</p>
+                                
+                                <input type="checkbox" id="mushrooms-details" class="recipe-toggle">
+                                <label for="mushrooms-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">24 large cremini mushrooms</div>
+                                            <div class="ingredient-item">3 tbsp olive oil</div>
+                                            <div class="ingredient-item">4 cloves garlic, minced</div>
+                                            <div class="ingredient-item">1/2 cup cream cheese</div>
+                                            <div class="ingredient-item">1/4 cup grated Parmesan</div>
+                                            <div class="ingredient-item">2 tbsp fresh parsley, chopped</div>
+                                            <div class="ingredient-item">1/4 cup breadcrumbs</div>
+                                            <div class="ingredient-item">Salt and pepper to taste</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 375°F (190°C). Clean mushrooms and remove stems.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Heat 1 tbsp oil in pan, sauté garlic and chopped mushroom stems for 5 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Mix with cream cheese, Parmesan, parsley, salt and pepper.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Stuff mushroom caps, top with breadcrumbs mixed with remaining oil.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Bake for 20-25 minutes until golden and bubbly.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">120</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">9g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">7g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">4g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recipe 3 - Spring Rolls -->
+                        <div class="recipe-card" id="spring-rolls">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1629115916087-7e8c114a24ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" alt="Spring Rolls" class="recipe-img">
+                                <span class="recipe-badge">Asian Fusion</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Vietnamese Fresh Spring Rolls</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 45 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 12 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 150 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Light and refreshing rice paper rolls filled with shrimp, herbs, and vegetables. Served with a tangy peanut dipping sauce.</p>
+                                
+                                <input type="checkbox" id="springrolls-details" class="recipe-toggle">
+                                <label for="springrolls-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">12 rice paper wrappers</div>
+                                            <div class="ingredient-item">24 medium cooked shrimp</div>
+                                            <div class="ingredient-item">2 cups lettuce, shredded</div>
+                                            <div class="ingredient-item">1 cup bean sprouts</div>
+                                            <div class="ingredient-item">1 carrot, julienned</div>
+                                            <div class="ingredient-item">1 cucumber, julienned</div>
+                                            <div class="ingredient-item">1/2 cup fresh mint leaves</div>
+                                            <div class="ingredient-item">1/2 cup fresh cilantro</div>
+                                            <div class="ingredient-item">1/4 cup roasted peanuts, chopped</div>
+                                            <div class="ingredient-item">1/4 cup hoisin sauce</div>
+                                            <div class="ingredient-item">2 tbsp peanut butter</div>
+                                            <div class="ingredient-item">1 tbsp lime juice</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Prepare all vegetables and herbs. Peel and halve shrimp lengthwise.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Soak rice paper in warm water for 10-15 seconds until pliable.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Layer ingredients on bottom third of wrapper: lettuce, sprouts, carrots, cucumber, herbs, 4 shrimp halves.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Fold sides inward, then roll tightly from bottom. Repeat for all rolls.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>For sauce: Mix hoisin, peanut butter, lime juice and 2 tbsp water. Top with peanuts.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">150</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">4g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">22g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">8g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 4 - Truffle Arancini -->
+                        <div class="recipe-card" id="truffle-arancini">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1606755456206-b25206bfa233?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Truffle Arancini" class="recipe-img">
+                                <span class="recipe-badge">Gourmet</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Truffle Arancini with Fontina Center</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 1 hour 30 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 14 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 280 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Crispy fried risotto balls infused with black truffle and stuffed with molten fontina cheese. A luxurious Italian appetizer.</p>
+                                
+                                <input type="checkbox" id="arancini-details" class="recipe-toggle">
+                                <label for="arancini-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">2 cups Arborio rice</div>
+                                            <div class="ingredient-item">4 cups chicken stock</div>
+                                            <div class="ingredient-item">1/2 cup dry white wine</div>
+                                            <div class="ingredient-item">1 shallot, minced</div>
+                                            <div class="ingredient-item">2 tbsp black truffle paste</div>
+                                            <div class="ingredient-item">1/2 cup grated Parmesan</div>
+                                            <div class="ingredient-item">4 oz fontina cheese, cubed</div>
+                                            <div class="ingredient-item">2 eggs, beaten</div>
+                                            <div class="ingredient-item">1 cup breadcrumbs</div>
+                                            <div class="ingredient-item">1/2 cup flour</div>
+                                            <div class="ingredient-item">Vegetable oil for frying</div>
+                                            <div class="ingredient-item">1/2 cup mayonnaise</div>
+                                            <div class="ingredient-item">1 clove roasted garlic</div>
+                                            <div class="ingredient-item">1 tsp lemon juice</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Cook risotto with stock, wine, and shallot. Stir in truffle paste and Parmesan. Chill 2 hours.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Form rice balls around fontina cubes. Chill 30 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Dredge in flour, egg, then breadcrumbs. Chill 15 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Fry at 375°F (190°C) until golden, about 4 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Mix mayo, roasted garlic, and lemon juice for dipping sauce.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">280</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">16g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">24g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">10g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 5 - Bacon Wrapped Dates -->
+                        <div class="recipe-card" id="bacon-dates">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Bacon Wrapped Dates" class="recipe-img">
+                                <span class="recipe-badge">Sweet & Savory</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Bacon-Wrapped Dates with Goat Cheese</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 30 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 5 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 210 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Sweet Medjool dates stuffed with creamy goat cheese, wrapped in smoky bacon, and baked to perfection. Irresistible flavor combination.</p>
+                                
+                                <input type="checkbox" id="dates-details" class="recipe-toggle">
+                                <label for="dates-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">24 Medjool dates, pitted</div>
+                                            <div class="ingredient-item">4 oz goat cheese</div>
+                                            <div class="ingredient-item">12 slices bacon, cut in half</div>
+                                            <div class="ingredient-item">2 tbsp honey</div>
+                                            <div class="ingredient-item">1/4 tsp crushed red pepper flakes</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 375°F (190°C). Line baking sheet with parchment.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Stuff each date with about 1 tsp goat cheese.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Wrap each date with half slice bacon, securing with toothpick.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Bake 20-25 minutes until bacon is crisp, turning once.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Drizzle with honey and sprinkle with red pepper flakes before serving.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">210</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">8g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">32g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">6g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 6 - Spanakopita -->
+                        <div class="recipe-card" id="spanakopita">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Spanakopita" class="recipe-img">
+                                <span class="recipe-badge">Greek</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Spinach and Feta Spanakopita Triangles</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 50 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 9 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 190 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Flaky phyllo pastry filled with spinach, feta, and herbs. A classic Greek appetizer that's perfect for parties.</p>
+                                
+                                <input type="checkbox" id="spanakopita-details" class="recipe-toggle">
+                                <label for="spanakopita-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">1 lb fresh spinach, chopped</div>
+                                            <div class="ingredient-item">1 cup feta cheese, crumbled</div>
+                                            <div class="ingredient-item">1/2 cup ricotta cheese</div>
+                                            <div class="ingredient-item">2 eggs, lightly beaten</div>
+                                            <div class="ingredient-item">3 green onions, chopped</div>
+                                            <div class="ingredient-item">2 tbsp fresh dill, chopped</div>
+                                            <div class="ingredient-item">1/4 tsp nutmeg</div>
+                                            <div class="ingredient-item">1/2 cup melted butter</div>
+                                            <div class="ingredient-item">12 sheets phyllo dough</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Wilt spinach in pan, squeeze out excess water. Mix with cheeses, eggs, onions, dill and nutmeg.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Cut phyllo sheets into strips. Brush with butter, layer 3 strips.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Place spoonful of filling at end, fold into triangles.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Brush with butter, bake at 350°F (175°C) for 25-30 mins until golden.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">190</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">12g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">15g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">7g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 7 - Caprese Skewers -->
+                        <div class="recipe-card" id="caprese-skewers">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Caprese Skewers" class="recipe-img">
+                                <span class="recipe-badge">Quick</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Caprese Skewers with Balsamic Glaze</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 15 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 5 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 120 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Fresh mozzarella, cherry tomatoes, and basil leaves skewered and drizzled with balsamic reduction. A no-cook appetizer that's always a hit.</p>
+                                
+                                <input type="checkbox" id="caprese-details" class="recipe-toggle">
+                                <label for="caprese-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">1 pint cherry tomatoes</div>
+                                            <div class="ingredient-item">8 oz fresh mozzarella balls (ciliegine)</div>
+                                            <div class="ingredient-item">24 fresh basil leaves</div>
+                                            <div class="ingredient-item">1/4 cup balsamic glaze</div>
+                                            <div class="ingredient-item">1 tbsp extra virgin olive oil</div>
+                                            <div class="ingredient-item">Salt and pepper to taste</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Thread one tomato, one folded basil leaf, and one mozzarella ball onto small skewers.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Arrange on serving platter. Drizzle with olive oil and sprinkle with salt and pepper.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Just before serving, drizzle with balsamic glaze.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">120</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">8g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">6g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">7g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 8 - Crab Cakes -->
+                        <div class="recipe-card" id="crab-cakes">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Crab Cakes" class="recipe-img">
+                                <span class="recipe-badge">Seafood</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Maryland-Style Crab Cakes</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 40 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 10 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 230 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Jumbo lump crab meat lightly bound with minimal filler to let the sweet crab flavor shine. Served with remoulade sauce.</p>
+                                
+                                <input type="checkbox" id="crab-details" class="recipe-toggle">
+                                <label for="crab-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">1 lb jumbo lump crab meat</div>
+                                            <div class="ingredient-item">1/4 cup panko breadcrumbs</div>
+                                            <div class="ingredient-item">1 egg, lightly beaten</div>
+                                            <div class="ingredient-item">2 tbsp mayonnaise</div>
+                                            <div class="ingredient-item">1 tbsp Dijon mustard</div>
+                                            <div class="ingredient-item">1 tsp Old Bay seasoning</div>
+                                            <div class="ingredient-item">1 tbsp fresh parsley, chopped</div>
+                                            <div class="ingredient-item">1 tsp Worcestershire sauce</div>
+                                            <div class="ingredient-item">2 tbsp butter</div>
+                                            <div class="ingredient-item">2 tbsp olive oil</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Gently pick through crab meat to remove any shells.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Mix all ingredients except crab. Gently fold in crab, keeping lumps intact.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Form into 8 patties. Chill 30 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Heat butter and oil in skillet. Cook cakes 4-5 mins per side until golden.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">230</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">14g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">8g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">18g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 9 - Hummus Platter -->
+                        <div class="recipe-card" id="hummus-platter">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1606755699173-1d5b6b4b0b0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Hummus Platter" class="recipe-img">
+                                <span class="recipe-badge">Vegan</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Mediterranean Hummus Platter</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 25 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 12 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 180 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Creamy homemade hummus surrounded by fresh vegetables, olives, and warm pita. A healthy, colorful starter for any gathering.</p>
+                                
+                                <input type="checkbox" id="hummus-details" class="recipe-toggle">
+                                <label for="hummus-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">2 cans chickpeas, drained</div>
+                                            <div class="ingredient-item">1/4 cup tahini</div>
+                                            <div class="ingredient-item">3 tbsp lemon juice</div>
+                                            <div class="ingredient-item">2 cloves garlic</div>
+                                            <div class="ingredient-item">1/2 tsp cumin</div>
+                                            <div class="ingredient-item">1/4 cup olive oil</div>
+                                            <div class="ingredient-item">2 tbsp water</div>
+                                            <div class="ingredient-item">1 cucumber, sliced</div>
+                                            <div class="ingredient-item">1 cup cherry tomatoes</div>
+                                            <div class="ingredient-item">1/2 cup Kalamata olives</div>
+                                            <div class="ingredient-item">4 pita breads, warmed</div>
+                                            <div class="ingredient-item">1/4 cup fresh parsley</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Blend chickpeas, tahini, lemon juice, garlic, cumin until smooth.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>With motor running, drizzle in olive oil and water to desired consistency.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Spread hummus on large platter, creating wells with back of spoon.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Drizzle with olive oil, sprinkle with paprika.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Arrange vegetables, olives, and pita around hummus. Garnish with parsley.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">180</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">10g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">18g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">6g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Chef</h3>
+                    <p>With over 15 years of culinary experience, I'm passionate about creating unforgettable dining experiences and sharing my knowledge with aspiring chefs.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="classes.html">Cooking Classes</a></li>
+                        <li><a href="portfolio.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Foodville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> chef@culinaryportfolio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Connect with Us | Follow for Food Inspiration | © 2023 Chef's Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
