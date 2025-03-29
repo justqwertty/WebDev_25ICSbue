@@ -3,17 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Chef Portfolio</title>
+    <title>Chef's Portfolio | Culinary Masterpieces</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <header><nav>
-    <ul>
-        <li><a href="index.html"> Home </a></li>
-        <li><a href="About.html">About</a></li>
-        
-    
-    </ul>
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-utensils"></i>
+                Chef's Portfolio
+            </a>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="signaturedishes.html">Signature Dishes</a></li>
+                
+                    <li><a href="blog.html">Blog</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="recipes.html">Recipes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="appetizers.html">Appetizers</a></li>
+                            <li><a href="main-courses.html">Main Courses</a></li>
+                            <li><a href="desserts.html">Desserts</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="catering.html">Event Catering</a></li>
+                            <li><a href="classes.html">Cooking Classes</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-</nav></header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Crafting Culinary Masterpieces with Passion</h1>
+            <p>Welcome to the world of flavors!</p>
+            <a href="recipes.html" class="btn">Explore My Recipes</a>
+        </div>
+    </section>
+
+    <section class="section featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Sections</h2>
+                <p>Discover the highlights of my culinary journey and offerings</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <div class="featured-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Punkies">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Main Courses</h3>
+                        <p>Explore my unique take on classic dishes with a modern twist.</p>
+                        <a href="main-courses.html" class="featured-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-img">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Signature Dishes">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Signature Dishes</h3>
+                        <p>Explore the chef's signature dishes that define my culinary style.</p>
+                        <a href="signaturedishes.html" class="featured-link">Discover More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-img">
+                        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Upcoming Classes">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Upcoming Classes</h3>
+                        <p>Discover upcoming cooking classes and workshops to enhance your skills.</p>
+                        <a href="#" class="featured-link">See Schedule <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section reviews">
+        <div class="container reviews-container">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>Hear what our satisfied clients have to say about their culinary experiences</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-content">Amazing food and excellent service! Every dish was prepared with such attention to detail and the flavors were incredible.</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Happy Customer">
+                        <div class="author-info">
+                            <h4>Happy Customer</h4>
+                            <p>Food Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-content">Delicious dishes and creative presentations. The chef's passion for food is evident in every bite. A truly memorable dining experience.</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Satisfied Patron">
+                        <div class="author-info">
+                            <h4>Satisfied Patron</h4>
+                            <p>Restaurant Critic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-content">Every meal is a delightful experience! The combination of flavors and textures is always perfectly balanced.</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Food Lover">
+                        <div class="author-info">
+                            <h4>Food Lover</h4>
+                            <p>Regular Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-content">A culinary journey worth savoring. Each course tells a story and takes you on an adventure of flavors you won't forget.</p>
+                    <div class="review-author">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Guest Reviewer">
+                        <div class="author-info">
+                            <h4>Guest Reviewer</h4>
+                            <p>Travel Blogger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section social">
+        <div class="container">
+            <div class="section-title">
+                <h2>Follow Me</h2>
+                <p>Stay connected for the latest updates, recipes, and culinary adventures</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+            </div>
+            <p class="social-text">Follow for behind-the-scenes content and professional updates</p>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Newsletter</h2>
+            <p>Stay updated with the latest recipes and culinary adventures</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <p>We promise to only send you the good stuff!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Chef</h3>
+                    <p>With over 15 years of culinary experience, I'm passionate about creating unforgettable dining experiences and sharing my knowledge with aspiring chefs.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="#">Cooking Classes</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Foodville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> chef@culinaryportfolio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Connect with Us | Follow for Food Inspiration | © 2023 Chef's Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>

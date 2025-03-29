@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Chef | Chef's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<style></style>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                Chef's Portfolio
+            </a>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="signaturedishes.html">Signature Dishes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="recipes.html">Recipes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="appetizers.html">Appetizers</a></li>
+                            <li><a href="main-courses.html">Main Courses</a></li>
+                            <li><a href="desserts.html">Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="catering.html">Event Catering</a></li>
+                            <li><a href="classes.html">Cooking Classes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Let's Cook Up Something Special</h1>
+                    <p>Whether you're interested in catering, classes, or just want to say hello, I'd love to hear from you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Get in Touch</h2>
+                    <p class="subtitle">Reach out for inquiries, collaborations, or just to share your culinary adventures</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h3>Send a Message</h3>
+                        <p>Fill out the form below and I'll get back to you within 24-48 hours</p>
+                        
+                        <form class="form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Select a subject</option>
+                                    <option value="catering">Catering Inquiry</option>
+                                    <option value="classes">Cooking Classes</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" placeholder="Type your message here" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Visit Our Kitchen</h3>
+                                <address>
+                                    123 Culinary Avenue<br>
+                                    Foodie District<br>
+                                    New York, NY 10001<br>
+                                    United States
+                                </address>
+                                <a href="#" class="map-link" id="openMap">
+                                    <i class="fas fa-map"></i> View on Map
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Email Us</h3>
+                                <p>For general inquiries:</p>
+                                <a href="mailto:chef@example.com" class="email-link">chef@example.com</a>
+                                <p>For catering requests:</p>
+                                <a href="mailto:catering@example.com" class="email-link">catering@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Call Us</h3>
+                                <p>Available 9am-5pm, Monday-Friday</p>
+                                <a href="tel:+1234567890" class="phone-link">+1 (234) 567-890</a>
+                                <p>For urgent catering inquiries:</p>
+                                <a href="tel:+1234567891" class="phone-link">+1 (234) 567-891</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Follow Our Culinary Journey</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Pinterest">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                            <p>Tag us in your creations: <strong>@ChefsPortfolio</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p class="subtitle">Quick answers to common questions</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How soon can I expect a response to my inquiry?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I typically respond to all inquiries within 24-48 hours. For urgent catering requests, please call our dedicated catering line at +1 (234) 567-891.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What information should I include in my catering inquiry?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For catering requests, please include:</p>
+                            <ul>
+                                <li>Event date and time</li>
+                                <li>Number of guests</li>
+                                <li>Type of event</li>
+                                <li>Any dietary restrictions</li>
+                                <li>Your budget range</li>
+                                <li>Preferred cuisine style</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer virtual cooking classes?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We offer both in-person and virtual cooking classes. Our virtual classes are conducted via Zoom and include ingredient lists sent in advance. Private group sessions are also available.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What areas do you service for catering?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We primarily service the New York metropolitan area, but we're available for travel for special events. Additional travel fees may apply for locations beyond 50 miles from our kitchen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Chef's Portfolio</h3>
+                    <p>Bringing culinary excellence to your table through innovative flavors and time-honored techniques.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="catering.html">Event Catering</a></li>
+                        <li><a href="classes.html">Cooking Classes</a></li>
+                        <li><a href="#">Private Chef Services</a></li>
+                        <li><a href="#">Recipe Development</a></li>
+                        <li><a href="#">Food Styling</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Culinary Ave, NY 10001</li>
+                        <li><i class="fas fa-phone-alt"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> chef@example.com</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Contact Form</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Chef's Portfolio. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Map Modal -->
+    <div class="modal" id="mapModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Our Location</h3>
+            <div class="map-container">
+                <!-- Embedded Google Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256024043!2d-73.9878446845938!3d40.748440179327976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMDguNyJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+            <button class="btn btn-primary" id="closeSuccessModal">OK</button>
+        </div>
+    </div>
+</body>
+</html>

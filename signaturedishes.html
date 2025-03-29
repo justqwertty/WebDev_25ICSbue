@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Portfolio | Signature Dishes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        :root {
+            --light-green: #d4edda;
+            --medium-green: #28a745;
+            --dark-green: #155724;
+            --blue: #007bff;
+            --dark-blue: #0056b3;
+            --light-gray: #f8f9fa;
+            --dark-gray: #343a40;
+            --white: #ffffff;
+            --black: #212529;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--black);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-green);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: var(--medium-green);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--dark-green);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 15px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--medium-green);
+        }
+
+        /* Hero Section */
+        .signature-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: var(--medium-green);
+            margin: 30px auto;
+        }
+
+        /* Signature Dishes Section */
+        .signature-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-green);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Signature Dishes Grid */
+        .signature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .signature-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .signature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .signature-img {
+            height: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .signature-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+
+        .signature-card:hover .signature-img img {
+            transform: scale(1.05);
+        }
+
+        .signature-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--medium-green);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .signature-content {
+            padding: 30px;
+        }
+
+        .signature-title {
+            font-size: 1.8rem;
+            color: var(--dark-green);
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .signature-title::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: var(--medium-green);
+            bottom: 0;
+            left: 0;
+        }
+
+        .signature-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            color: var(--blue);
+        }
+
+        .signature-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.95rem;
+        }
+
+        .signature-description {
+            margin-bottom: 25px;
+            color: var(--dark-gray);
+        }
+
+        .signature-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--medium-green);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .signature-btn:hover {
+            background: var(--dark-green);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Recipe Details */
+        .recipe-toggle {
+            display: none;
+        }
+
+        .recipe-toggle-label {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            background-color: var(--light-green);
+            color: var(--dark-green);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            margin-top: 20px;
+        }
+
+        .recipe-toggle-label:hover {
+            background-color: var(--medium-green);
+            color: var(--white);
+        }
+
+        .recipe-toggle-label::after {
+            content: '+ Show Recipe';
+            margin-left: 8px;
+            font-weight: bold;
+        }
+
+        .recipe-toggle:checked + .recipe-toggle-label::after {
+            content: '- Hide Recipe';
+        }
+
+        .recipe-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.6s ease;
+            background-color: var(--light-gray);
+        }
+
+        .recipe-toggle:checked ~ .recipe-details {
+            max-height: 3000px;
+        }
+
+        .detail-section {
+            padding: 25px;
+        }
+
+        .detail-section h4 {
+            font-size: 1.2rem;
+            color: var(--dark-green);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .ingredients-list, .instructions-list {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .ingredients-list {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        .ingredient-item, .instruction-item {
+            display: flex;
+            gap: 10px;
+        }
+
+        .ingredient-item::before {
+            content: '•';
+            color: var(--medium-green);
+            font-weight: bold;
+        }
+
+        .instruction-item {
+            align-items: flex-start;
+        }
+
+        .instruction-number {
+            background-color: var(--medium-green);
+            color: var(--white);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 0.8rem;
+            margin-top: 2px;
+        }
+
+        .nutrition-facts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .nutrition-item {
+            text-align: center;
+        }
+
+        .nutrition-value {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark-green);
+        }
+
+        .nutrition-label {
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+            margin-top: 5px;
+        }
+
+        /* Dish Categories */
+        .dish-category {
+            margin: 80px 0 40px;
+            text-align: center;
+        }
+
+        .dish-category h3 {
+            font-size: 2.2rem;
+            color: var(--dark-green);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dish-category h3::after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 3px;
+            background: var(--medium-green);
+            bottom: -10px;
+            left: 15%;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-green);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            color: var(--light-green);
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: var(--light-green);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-col p {
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            opacity: 0.8;
+            transition: all 0.3s;
+            display: inline-block;
+            color: var(--white);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            transform: translateX(5px);
+            color: var(--light-green);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: var(--light-green);
+            color: var(--dark-green);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .signature-grid {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .signature-grid {
+                grid-template-columns: 1fr;
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-col:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+
+            .signature-img {
+                height: 300px;
+            }
+
+            .signature-content {
+                padding: 25px;
+            }
+
+            .signature-title {
+                font-size: 1.6rem;
+            }
+
+            .dish-category h3 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .dish-category h3 {
+                font-size: 1.8rem;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .nutrition-facts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-utensils"></i>
+                Chef's Portfolio
+            </a>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="signaturedishes.html">Signature Dishes</a></li>
+                
+                    <li><a href="blog.html">Blog</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="recipes.html">Recipes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="appetizers.html">Appetizers</a></li>
+                            <li><a href="main-courses.html">Main Courses</a></li>
+                            <li><a href="desserts.html">Desserts</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="catering.html">Event Catering</a></li>
+                            <li><a href="classes.html">Cooking Classes</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="signature-hero">
+        <div class="hero-content">
+            <h1>My Signature Creations</h1>
+            <div class="divider"></div>
+            <p>Culinary masterpieces that define my style and expertise. Each dish tells a story of passion, innovation, and perfection.</p>
+        </div>
+    </section>
+
+    <!-- Signature Dishes Section -->
+    <section class="signature-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Signature Collection</h2>
+                <p>These are the dishes that have earned me recognition and accolades throughout my career. Each one represents hours of refinement and a deep understanding of flavors.</p>
+            </div>
+
+            <!-- Appetizers -->
+            <div class="dish-category">
+                <h3>Signature Appetizers</h3>
+            </div>
+
+            <div class="signature-grid">
+                <!-- Appetizer 1 -->
+                <div class="signature-card">
+                    <div class="signature-img">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Truffle Arancini">
+                        <span class="signature-badge">Chef's Special</span>
+                    </div>
+                    <div class="signature-content">
+                        <h3 class="signature-title">Black Truffle & Wild Mushroom Arancini</h3>
+                        <div class="signature-meta">
+                            <span><i class="fas fa-clock"></i> 45 mins</span>
+                            <span><i class="fas fa-utensils"></i> 12 ingredients</span>
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                        </div>
+                        <p class="signature-description">Crispy golden risotto balls infused with black truffle and wild mushrooms, filled with a molten taleggio cheese center. Served with a truffle aioli that elevates this classic to new heights.</p>
+                        <a href="#" class="signature-btn">View Recipe</a>
+                        
+                        <input type="checkbox" id="arancini-details" class="recipe-toggle">
+                        <label for="arancini-details" class="recipe-toggle-label"></label>
+                        
+                        <div class="recipe-details">
+                            <div class="detail-section">
+                                <h4>Ingredients</h4>
+                                <div class="ingredients-list">
+                                    <div class="ingredient-item">2 cups Arborio rice</div>
+                                    <div class="ingredient-item">1/2 cup white wine</div>
+                                    <div class="ingredient-item">4 cups chicken stock</div>
+                                    <div class="ingredient-item">1/2 cup grated Parmesan</div>
+                                    <div class="ingredient-item">1 tbsp black truffle paste</div>
+                                    <div class="ingredient-item">1 cup wild mushrooms, finely chopped</div>
+                                    <div class="ingredient-item">4 oz taleggio cheese, cubed</div>
+                                    <div class="ingredient-item">2 eggs, beaten</div>
+                                    <div class="ingredient-item">1 cup breadcrumbs</div>
+                                    <div class="ingredient-item">1/2 cup flour</div>
+                                    <div class="ingredient-item">1/2 cup mayonnaise</div>
+                                    <div class="ingredient-item">1 tsp truffle oil</div>
+                                    <div class="ingredient-item">Vegetable oil for frying</div>
+                                    <div class="ingredient-item">Salt and pepper to taste</div>
+                                </div>
+                                
+                                <h4>Instructions</h4>
+                                <div class="instructions-list">
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">1</div>
+                                        <div>Cook Arborio rice with white wine and chicken stock until creamy. Stir in Parmesan and truffle paste. Spread on tray to cool.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">2</div>
+                                        <div>Sauté wild mushrooms until golden. Mix into cooled risotto.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">3</div>
+                                        <div>Take 2 tbsp risotto, make indentation, add cheese cube, and form into ball. Repeat.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">4</div>
+                                        <div>Dredge balls in flour, then egg, then breadcrumbs. Chill 30 mins.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">5</div>
+                                        <div>Fry at 350°F (175°C) until golden (3-4 mins). Drain on paper towels.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">6</div>
+                                        <div>Mix mayo with truffle oil for dipping sauce. Serve arancini warm.</div>
+                                    </div>
+                                </div>
+                                
+                                <h4>Nutrition Facts (per serving)</h4>
+                                <div class="nutrition-facts">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">320</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">18g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">32g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">10g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appetizer 2 -->
+                <div class="signature-card">
+                    <div class="signature-img">
+                        <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Scallop Ceviche">
+                        <span class="signature-badge">Award Winner</span>
+                    </div>
+                    <div class="signature-content">
+                        <h3 class="signature-title">Yuzu-Marinated Scallop Ceviche</h3>
+                        <div class="signature-meta">
+                            <span><i class="fas fa-clock"></i> 30 mins</span>
+                            <span><i class="fas fa-utensils"></i> 9 ingredients</span>
+                            <span><i class="fas fa-star"></i> 5/5</span>
+                        </div>
+                        <p class="signature-description">Dayboat scallops cured in a vibrant yuzu-leche de tigre with finger lime caviar, compressed watermelon, and edible flowers. A perfect balance of sweet, tart, and umami flavors.</p>
+                        <a href="#" class="signature-btn">View Recipe</a>
+                        
+                        <input type="checkbox" id="ceviche-details" class="recipe-toggle">
+                        <label for="ceviche-details" class="recipe-toggle-label"></label>
+                        
+                        <div class="recipe-details">
+                            <div class="detail-section">
+                                <h4>Ingredients</h4>
+                                <div class="ingredients-list">
+                                    <div class="ingredient-item">12 large fresh scallops</div>
+                                    <div class="ingredient-item">1/4 cup yuzu juice</div>
+                                    <div class="ingredient-item">2 tbsp lime juice</div>
+                                    <div class="ingredient-item">1 tbsp soy sauce</div>
+                                    <div class="ingredient-item">1 tsp honey</div>
+                                    <div class="ingredient-item">1/2 cup seedless watermelon, diced</div>
+                                    <div class="ingredient-item">1 tbsp finger lime pearls</div>
+                                    <div class="ingredient-item">Edible flowers for garnish</div>
+                                    <div class="ingredient-item">Micro cilantro for garnish</div>
+                                </div>
+                                
+                                <h4>Instructions</h4>
+                                <div class="instructions-list">
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">1</div>
+                                        <div>Slice scallops horizontally into 3 thin rounds each. Chill.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">2</div>
+                                        <div>Whisk yuzu juice, lime juice, soy sauce, and honey to make marinade.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">3</div>
+                                        <div>Place watermelon cubes under vacuum seal (or in ziplock with air removed) to compress for 10 mins.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">4</div>
+                                        <div>Arrange scallop slices on plates. Spoon marinade over.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">5</div>
+                                        <div>Add compressed watermelon, finger lime pearls, and garnish with flowers and micro cilantro.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">6</div>
+                                        <div>Serve immediately with crisp white wine.</div>
+                                    </div>
+                                </div>
+                                
+                                <h4>Nutrition Facts (per serving)</h4>
+                                <div class="nutrition-facts">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">180</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">2g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">15g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">22g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="dish-category">
+                <h3>Signature Main Courses</h3>
+            </div>
+
+            <div class="signature-grid">
+                <!-- Main 1 -->
+                <div class="signature-card">
+                    <div class="signature-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Duck Breast">
+                        <span class="signature-badge">Signature Dish</span>
+                    </div>
+                    <div class="signature-content">
+                        <h3 class="signature-title">Coffee-Crusted Duck Breast</h3>
+                        <div class="signature-meta">
+                            <span><i class="fas fa-clock"></i> 1 hour</span>
+                            <span><i class="fas fa-utensils"></i> 14 ingredients</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                        </div>
+                        <p class="signature-description">Perfectly cooked duck breast with an espresso-spice crust, served with cherry-port reduction, duck fat potatoes, and caramelized endive. The coffee enhances the natural richness of the duck.</p>
+                        <a href="#" class="signature-btn">View Recipe</a>
+                        
+                        <input type="checkbox" id="duck-details" class="recipe-toggle">
+                        <label for="duck-details" class="recipe-toggle-label"></label>
+                        
+                        <div class="recipe-details">
+                            <div class="detail-section">
+                                <h4>Ingredients</h4>
+                                <div class="ingredients-list">
+                                    <div class="ingredient-item">2 duck breasts</div>
+                                    <div class="ingredient-item">1 tbsp finely ground espresso</div>
+                                    <div class="ingredient-item">1 tsp smoked paprika</div>
+                                    <div class="ingredient-item">1 tsp brown sugar</div>
+                                    <div class="ingredient-item">1/2 tsp cinnamon</div>
+                                    <div class="ingredient-item">1/2 cup port wine</div>
+                                    <div class="ingredient-item">1/2 cup cherries, pitted</div>
+                                    <div class="ingredient-item">1 tbsp balsamic vinegar</div>
+                                    <div class="ingredient-item">2 cups baby potatoes, halved</div>
+                                    <div class="ingredient-item">2 tbsp duck fat</div>
+                                    <div class="ingredient-item">2 endives, halved</div>
+                                    <div class="ingredient-item">1 tbsp honey</div>
+                                    <div class="ingredient-item">2 sprigs thyme</div>
+                                    <div class="ingredient-item">Salt and pepper to taste</div>
+                                </div>
+                                
+                                <h4>Instructions</h4>
+                                <div class="instructions-list">
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">1</div>
+                                        <div>Score duck skin in crosshatch pattern. Season with salt.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">2</div>
+                                        <div>Mix espresso, paprika, sugar, and cinnamon. Rub on duck flesh side.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">3</div>
+                                        <div>Cook duck skin-side down in cold pan over medium heat until crispy (8-10 mins). Flip and cook 3-4 mins. Rest.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">4</div>
+                                        <div>Simmer port, cherries, and vinegar until syrupy (10 mins).</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">5</div>
+                                        <div>Toss potatoes in duck fat, roast at 400°F (200°C) until golden (25 mins).</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">6</div>
+                                        <div>Sear endive cut-side down with honey until caramelized.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">7</div>
+                                        <div>Slice duck, serve with sauce, potatoes, and endive.</div>
+                                    </div>
+                                </div>
+                                
+                                <h4>Nutrition Facts (per serving)</h4>
+                                <div class="nutrition-facts">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">580</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">32g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">45g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">38g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main 2 -->
+                <div class="signature-card">
+                    <div class="signature-img">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Halibut">
+                        <span class="signature-badge">Seasonal Special</span>
+                    </div>
+                    <div class="signature-content">
+                        <h3 class="signature-title">Miso-Glazed Halibut</h3>
+                        <div class="signature-meta">
+                            <span><i class="fas fa-clock"></i> 50 mins</span>
+                            <span><i class="fas fa-utensils"></i> 11 ingredients</span>
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                        </div>
+                        <p class="signature-description">Wild-caught halibut with a caramelized white miso glaze, served with forbidden black rice, bok choy, and a dashi broth foam. The umami flavors create an unforgettable dining experience.</p>
+                        <a href="#" class="signature-btn">View Recipe</a>
+                        
+                        <input type="checkbox" id="halibut-details" class="recipe-toggle">
+                        <label for="halibut-details" class="recipe-toggle-label"></label>
+                        
+                        <div class="recipe-details">
+                            <div class="detail-section">
+                                <h4>Ingredients</h4>
+                                <div class="ingredients-list">
+                                    <div class="ingredient-item">2 halibut fillets (6oz each)</div>
+                                    <div class="ingredient-item">3 tbsp white miso paste</div>
+                                    <div class="ingredient-item">1 tbsp mirin</div>
+                                    <div class="ingredient-item">1 tbsp honey</div>
+                                    <div class="ingredient-item">1 tsp grated ginger</div>
+                                    <div class="ingredient-item">1 cup forbidden black rice</div>
+                                    <div class="ingredient-item">2 cups dashi stock</div>
+                                    <div class="ingredient-item">2 baby bok choy, halved</div>
+                                    <div class="ingredient-item">1 tbsp soy sauce</div>
+                                    <div class="ingredient-item">1/4 cup heavy cream</div>
+                                    <div class="ingredient-item">1 tsp lecithin (for foam)</div>
+                                </div>
+                                
+                                <h4>Instructions</h4>
+                                <div class="instructions-list">
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">1</div>
+                                        <div>Cook black rice according to package instructions using dashi instead of water.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">2</div>
+                                        <div>Mix miso, mirin, honey, and ginger. Brush on halibut and marinate 30 mins.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                        <div class="instruction-number">3</div>
+                                        <div>Broil halibut 6" from heat for 6-8 mins untilglaze caramelizes.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                    <div class="instruction-number">4</div>
+                                    <div>Blanch bok choy in salted water, finish with soy sauce.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                    <div class="instruction-number">5</div>
+                                    <div>Heat remaining dashi with cream, blend with lecithin to create foam.</div>
+                                    </div>
+                                    <div class="instruction-item">
+                                    <div class="instruction-number">6</div>
+                                    <div>Plate rice, top with halibut, bok choy, and spoon foam around.</div>
+                                    </div>
+                                    </div>
+                                    <h4>Nutrition Facts (per serving)</h4>
+                                    <div class="nutrition-facts">
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">420</div>
+                                            <div class="nutrition-label">Calories</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">12g</div>
+                                            <div class="nutrition-label">Fat</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">45g</div>
+                                            <div class="nutrition-label">Carbs</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">38g</div>
+                                            <div class="nutrition-label">Protein</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Desserts -->
+                <div class="dish-category">
+                    <h3>Signature Desserts</h3>
+                </div>
+        
+                <div class="signature-grid">
+                    <!-- Dessert 1 -->
+                    <div class="signature-card">
+                        <div class="signature-img">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Chocolate Sphere">
+                            <span class="signature-badge">Grand Finale</span>
+                        </div>
+                        <div class="signature-content">
+                            <h3 class="signature-title">Chocolate Sphere with Liquid Caramel</h3>
+                            <div class="signature-meta">
+                                <span><i class="fas fa-clock"></i> 2 hours</span>
+                                <span><i class="fas fa-utensils"></i> 16 ingredients</span>
+                                <span><i class="fas fa-star"></i> 5/5</span>
+                            </div>
+                            <p class="signature-description">A dramatic dark chocolate sphere filled with salted caramel mousse, chocolate crumble, and liquid caramel center. Served with warm caramel sauce poured tableside to melt the sphere.</p>
+                            <a href="#" class="signature-btn">View Recipe</a>
+                            
+                            <input type="checkbox" id="chocolate-details" class="recipe-toggle">
+                            <label for="chocolate-details" class="recipe-toggle-label"></label>
+                            
+                            <div class="recipe-details">
+                                <div class="detail-section">
+                                    <h4>Ingredients</h4>
+                                    <div class="ingredients-list">
+                                        <div class="ingredient-item">8 oz dark chocolate (70%)</div>
+                                        <div class="ingredient-item">1/2 cup heavy cream</div>
+                                        <div class="ingredient-item">1/4 cup sugar</div>
+                                        <div class="ingredient-item">2 tbsp water</div>
+                                        <div class="ingredient-item">1/4 cup butter</div>
+                                        <div class="ingredient-item">1 tsp sea salt</div>
+                                        <div class="ingredient-item">1 cup chocolate cookie crumbs</div>
+                                        <div class="ingredient-item">1/2 cup caramel sauce</div>
+                                        <div class="ingredient-item">1 tsp gelatin</div>
+                                        <div class="ingredient-item">1/2 cup mascarpone</div>
+                                        <div class="ingredient-item">1/2 cup powdered sugar</div>
+                                        <div class="ingredient-item">1 tsp vanilla</div>
+                                        <div class="ingredient-item">1 cup whipped cream</div>
+                                        <div class="ingredient-item">Gold leaf for garnish</div>
+                                        <div class="ingredient-item">Vanilla ice cream for serving</div>
+                                        <div class="ingredient-item">Edible flowers for garnish</div>
+                                    </div>
+                                    
+                                    <h4>Instructions</h4>
+                                    <div class="instructions-list">
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">1</div>
+                                            <div>Melt chocolate and brush inside sphere molds. Chill until set (3 coats).</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">2</div>
+                                            <div>Make caramel: Cook sugar and water to amber, whisk in cream and butter, add salt.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">3</div>
+                                            <div>Bloom gelatin in 1 tbsp water. Mix with 1/4 cup caramel, mascarpone, powdered sugar, and vanilla. Fold in whipped cream.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">4</div>
+                                            <div>Pipe mousse into spheres, add cookie crumbs, then pour in remaining caramel. Freeze.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">5</div>
+                                            <div>Unmold spheres, garnish with gold leaf and flowers.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">6</div>
+                                            <div>Serve with warm caramel sauce and ice cream.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h4>Nutrition Facts (per serving)</h4>
+                                    <div class="nutrition-facts">
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">480</div>
+                                            <div class="nutrition-label">Calories</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">32g</div>
+                                            <div class="nutrition-label">Fat</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">45g</div>
+                                            <div class="nutrition-label">Carbs</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">6g</div>
+                                            <div class="nutrition-label">Protein</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Dessert 2 -->
+                    <div class="signature-card">
+                        <div class="signature-img">
+                            <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Lemon Tart">
+                            <span class="signature-badge">Citrus Masterpiece</span>
+                        </div>
+                        <div class="signature-content">
+                            <h3 class="signature-title">Yuzu & Lemon Verbena Tart</h3>
+                            <div class="signature-meta">
+                                <span><i class="fas fa-clock"></i> 3 hours</span>
+                                <span><i class="fas fa-utensils"></i> 18 ingredients</span>
+                                <span><i class="fas fa-star"></i> 4.9/5</span>
+                            </div>
+                            <p class="signature-description">A buttery sablé breton crust filled with yuzu curd and lemon verbena cream, topped with torched meringue and candied citrus. The perfect balance of tart and sweet with floral notes.</p>
+                            <a href="#" class="signature-btn">View Recipe</a>
+                            
+                            <input type="checkbox" id="tart-details" class="recipe-toggle">
+                            <label for="tart-details" class="recipe-toggle-label"></label>
+                            
+                            <div class="recipe-details">
+                                <div class="detail-section">
+                                    <h4>Ingredients</h4>
+                                    <div class="ingredients-list">
+                                        <div class="ingredient-item">1 1/2 cups flour</div>
+                                        <div class="ingredient-item">1/2 cup powdered sugar</div>
+                                        <div class="ingredient-item">1/2 cup butter, cold</div>
+                                        <div class="ingredient-item">1 egg yolk</div>
+                                        <div class="ingredient-item">1/2 cup yuzu juice</div>
+                                        <div class="ingredient-item">1/2 cup lemon juice</div>
+                                        <div class="ingredient-item">3/4 cup sugar</div>
+                                        <div class="ingredient-item">4 eggs</div>
+                                        <div class="ingredient-item">1/2 cup butter, cubed</div>
+                                        <div class="ingredient-item">1/2 cup heavy cream</div>
+                                        <div class="ingredient-item">1/4 cup lemon verbena leaves</div>
+                                        <div class="ingredient-item">3 egg whites</div>
+                                        <div class="ingredient-item">1/2 cup sugar</div>
+                                        <div class="ingredient-item">1/4 tsp cream of tartar</div>
+                                        <div class="ingredient-item">1 lemon, thinly sliced</div>
+                                        <div class="ingredient-item">1/2 cup sugar (for candying)</div>
+                                        <div class="ingredient-item">1/2 cup water (for candying)</div>
+                                        <div class="ingredient-item">Edible flowers for garnish</div>
+                                    </div>
+                                    
+                                    <h4>Instructions</h4>
+                                    <div class="instructions-list">
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">1</div>
+                                            <div>Make crust: Pulse flour, powdered sugar, and butter until sandy. Add yolk. Press into tart pan, bake at 350°F (175°C) for 15 mins.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">2</div>
+                                            <div>Make curd: Whisk juices, sugar, and eggs over double boiler until thick. Strain, whisk in butter.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">3</div>
+                                            <div>Infuse cream with lemon verbena by heating together, then steeping 30 mins. Strain.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">4</div>
+                                            <div>Make meringue: Whip whites with cream of tartar, gradually add sugar to stiff peaks.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">5</div>
+                                            <div>Candy lemon slices by simmering in sugar syrup 15 mins. Dry on rack.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">6</div>
+                                            <div>Assemble: Fill crust with curd, chill. Pipe verbena cream, then meringue. Torch.</div>
+                                        </div>
+                                        <div class="instruction-item">
+                                            <div class="instruction-number">7</div>
+                                            <div>Garnish with candied lemon and flowers.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h4>Nutrition Facts (per serving)</h4>
+                                    <div class="nutrition-facts">
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">380</div>
+                                            <div class="nutrition-label">Calories</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">22g</div>
+                                            <div class="nutrition-label">Fat</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">45g</div>
+                                            <div class="nutrition-label">Carbs</div>
+                                        </div>
+                                        <div class="nutrition-item">
+                                            <div class="nutrition-value">6g</div>
+                                            <div class="nutrition-label">Protein</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-col">
+                        <h3>About Chef</h3>
+                        <p>With over 15 years of culinary experience, I'm passionate about creating unforgettable dining experiences and sharing my knowledge with aspiring chefs.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="Signature Dishes.html">Signature Dishes</a></li>
+                            <li><a href="portfolio.html">Gallery</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact Info</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Foodville</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> chef@culinaryportfolio.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2023 Chef's Portfolio. All rights reserved. | Crafted with <i class="fas fa-heart" style="color: var(--medium-green);"></i> by Chef</p>
+                </div>
+            </div>
+        </footer>
+    </body> </html>  

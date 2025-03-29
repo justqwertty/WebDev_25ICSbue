@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Portfolio | Main Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                Chef's Portfolio
+            </a>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="signaturedishes.html">Signature Dishes</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="recipes.html">Recipes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="appetizers.html">Appetizers</a></li>
+                            <li><a href="main-courses.html" class="active">Main Courses</a></li>
+                            <li><a href="desserts.html">Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="catering.html">Event Catering</a></li>
+                            <li><a href="classes.html">Cooking Classes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero main-courses-hero">
+            <div class="hero-content">
+                <h1>Signature Main Courses</h1>
+                <p>Heartwarming dishes that take center stage at any meal</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="featured-recipe">
+                    <div class="featured-container">
+                        <div class="featured-img">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Featured Main Course">
+                        </div>
+                        <div class="featured-content">
+                            <span class="featured-badge">Chef's Special</span>
+                            <h2 class="featured-title">Herb-Crusted Ribeye Steak</h2>
+                            <div class="featured-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="featured-description">Perfectly cooked ribeye with a fragrant herb crust, served with red wine reduction and roasted vegetables.</p>
+                            <a href="#ribeye-steak" class="btn" style="background-color: white; color: var(--dark-green); align-self: flex-start;">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-section" id="mains-section">
+                    <div class="recipes-container">
+                        <div class="recipe-card" id="ribeye-steak">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Steak" class="recipe-img">
+                                <span class="recipe-badge">Chef's Special</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Herb-Crusted Ribeye Steak</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 30 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 8 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 450 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Perfectly cooked ribeye with a fragrant herb crust, served with red wine reduction and roasted vegetables.</p>
+                                
+                                <input type="checkbox" id="steak-details" class="recipe-toggle">
+                                <label for="steak-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">2 ribeye steaks (1.5" thick)</div>
+                                            <div class="ingredient-item">2 tbsp fresh rosemary, chopped</div>
+                                            <div class="ingredient-item">2 tbsp fresh thyme, chopped</div>
+                                            <div class="ingredient-item">3 cloves garlic, minced</div>
+                                            <div class="ingredient-item">2 tbsp Dijon mustard</div>
+                                            <div class="ingredient-item">1/2 cup panko breadcrumbs</div>
+                                            <div class="ingredient-item">1/2 cup red wine</div>
+                                            <div class="ingredient-item">2 tbsp butter</div>
+                                            <div class="ingredient-item">Salt and pepper to taste</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 400°F (200°C). Season steaks generously with salt and pepper.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Sear steaks in hot pan for 3 minutes per side. Remove from pan.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Mix herbs, garlic, mustard and breadcrumbs. Press onto steaks.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Roast in oven for 6-8 minutes for medium-rare.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Deglaze pan with red wine, reduce by half, whisk in butter for sauce.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">450</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">32g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">8g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">35g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card" id="miso-salmon">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Salmon" class="recipe-img">
+                                <span class="recipe-badge">Healthy</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Miso Glazed Salmon</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 25 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 7 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 320 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Silky salmon fillets with sweet-savory miso glaze, served with sesame roasted broccoli and jasmine rice.</p>
+                                
+                                <input type="checkbox" id="salmon-details" class="recipe-toggle">
+                                <label for="salmon-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">4 salmon fillets (6oz each)</div>
+                                            <div class="ingredient-item">3 tbsp white miso paste</div>
+                                            <div class="ingredient-item">2 tbsp mirin</div>
+                                            <div class="ingredient-item">1 tbsp honey</div>
+                                            <div class="ingredient-item">1 tbsp rice vinegar</div>
+                                            <div class="ingredient-item">1 tsp grated ginger</div>
+                                            <div class="ingredient-item">1 tbsp sesame seeds</div>
+                                            <div class="ingredient-item">2 heads broccoli, cut into florets</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Whisk miso, mirin, honey, vinegar and ginger to make glaze.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Pat salmon dry, brush with half the glaze. Let marinate 15 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Toss broccoli with oil, salt and sesame seeds. Roast at 425°F (220°C) for 15 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Broil salmon 6" from heat for 6-8 minutes until caramelized.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Serve with remaining glaze drizzled over, alongside broccoli.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">320</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">16g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">18g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card" id="mushroom-pasta">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1598515214211-89d3c41ae0c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Pasta" class="recipe-img">
+                                <span class="recipe-badge">Italian</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Creamy Mushroom Fettuccine</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 35 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 10 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 580 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Rich and creamy pasta with wild mushrooms, garlic, white wine, and Parmesan. A restaurant-quality dish made at home.</p>
+                                
+                                <input type="checkbox" id="pasta-details" class="recipe-toggle">
+                                <label for="pasta-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">12 oz fettuccine pasta</div>
+                                            <div class="ingredient-item">3 tbsp olive oil</div>
+                                            <div class="ingredient-item">1 lb mixed wild mushrooms</div>
+                                            <div class="ingredient-item">4 cloves garlic, minced</div>
+                                            <div class="ingredient-item">1 shallot, finely chopped</div>
+                                            <div class="ingredient-item">1/2 cup dry white wine</div>
+                                            <div class="ingredient-item">1 cup heavy cream</div>
+                                            <div class="ingredient-item">1/2 cup grated Parmesan</div>
+                                            <div class="ingredient-item">2 tbsp fresh parsley, chopped</div>
+                                            <div class="ingredient-item">Salt and pepper to taste</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Cook pasta al dente according to package directions.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Heat oil in large skillet. Sauté mushrooms until golden (8-10 mins).</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Add garlic and shallot, cook 2 minutes until fragrant.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Deglaze with wine, simmer until reduced by half.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Stir in cream and Parmesan until smooth. Toss with pasta.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Garnish with parsley and extra Parmesan before serving.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">580</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">32g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">55g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">18g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card" id="chicken-curry">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1488&q=80" alt="Chicken Curry" class="recipe-img">
+                                <span class="recipe-badge">Indian</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Coconut Chicken Curry</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 45 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 12 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 420 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Fragrant curry with tender chicken, creamy coconut milk, and aromatic spices. Served with basmati rice and naan bread.</p>
+                                
+                                <input type="checkbox" id="curry-details" class="recipe-toggle">
+                                <label for="curry-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">1.5 lbs chicken thighs, boneless</div>
+                                            <div class="ingredient-item">1 onion, finely chopped</div>
+                                            <div class="ingredient-item">3 cloves garlic, minced</div>
+                                            <div class="ingredient-item">1 tbsp ginger, grated</div>
+                                            <div class="ingredient-item">2 tbsp curry powder</div>
+                                            <div class="ingredient-item">1 tsp turmeric</div>
+                                            <div class="ingredient-item">1 can (14oz) coconut milk</div>
+                                            <div class="ingredient-item">1 cup chicken stock</div>
+                                            <div class="ingredient-item">2 tomatoes, diced</div>
+                                            <div class="ingredient-item">1 red bell pepper, sliced</div>
+                                            <div class="ingredient-item">2 tbsp vegetable oil</div>
+                                            <div class="ingredient-item">Fresh cilantro for garnish</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Heat oil in large pot. Brown chicken on both sides, then remove.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Sauté onion until soft, add garlic, ginger, and spices. Cook 1 minute.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Add tomatoes and bell pepper, cook until tomatoes break down.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Return chicken to pot, add coconut milk and stock. Simmer 25 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Season with salt, garnish with cilantro. Serve with rice and naan.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">420</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">15g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">32g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card" id="beef-bourguignon">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Beef Bourguignon" class="recipe-img">
+                                <span class="recipe-badge">French</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Classic Beef Bourguignon</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 3 hours</span>
+                                    <span><i class="fas fa-utensils"></i> 14 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 520 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Tender beef slow-cooked in red wine with mushrooms, carrots, and pearl onions. A French classic that's perfect for special occasions.</p>
+                                
+                                <input type="checkbox" id="bourguignon-details" class="recipe-toggle">
+                                <label for="bourguignon-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">3 lbs beef chuck, cubed</div>
+                                            <div class="ingredient-item">6 oz bacon, diced</div>
+                                            <div class="ingredient-item">2 carrots, sliced</div>
+                                            <div class="ingredient-item">1 onion, chopped</div>
+                                            <div class="ingredient-item">3 cloves garlic, minced</div>
+                                            <div class="ingredient-item">2 tbsp tomato paste</div>
+                                            <div class="ingredient-item">2 cups red wine</div>
+                                            <div class="ingredient-item">2 cups beef stock</div>
+                                            <div class="ingredient-item">1 lb mushrooms, quartered</div>
+                                            <div class="ingredient-item">1 cup pearl onions, peeled</div>
+                                            <div class="ingredient-item">2 tbsp flour</div>
+                                            <div class="ingredient-item">3 sprigs fresh thyme</div>
+                                            <div class="ingredient-item">2 bay leaves</div>
+                                            <div class="ingredient-item">Salt and pepper to taste</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 325°F (165°C). Cook bacon in Dutch oven until crisp, then remove.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Sear beef in batches in bacon fat until browned. Remove and set aside.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Sauté carrots and onion until softened. Add garlic and tomato paste, cook 1 minute.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Sprinkle flour over vegetables, stir to combine. Add wine and stock, bring to simmer.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Return beef and bacon to pot. Add herbs. Cover and braise in oven for 2.5 hours.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Add mushrooms and pearl onions, cook 30 minutes more. Season and serve.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">520</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">15g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">45g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe-card" id="stuffed-peppers">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Stuffed Peppers" class="recipe-img">
+                                <span class="recipe-badge">Vegetarian</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Quinoa Stuffed Bell Peppers</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 1 hour</span>
+                                    <span><i class="fas fa-utensils"></i> 12 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 280 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Colorful bell peppers stuffed with protein-packed quinoa, black beans, corn, and cheese. A satisfying meatless main.</p>
+                                
+                                <input type="checkbox" id="peppers-details" class="recipe-toggle">
+                                <label for="peppers-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">4 large bell peppers</div>
+                                            <div class="ingredient-item">1 cup quinoa, rinsed</div>
+                                            <div class="ingredient-item">1 can black beans, drained</div>
+                                            <div class="ingredient-item">1 cup corn kernels</div>
+                                            <div class="ingredient-item">1 small onion, diced</div>
+                                            <div class="ingredient-item">2 cloves garlic, minced</div>
+                                            <div class="ingredient-item">1 tsp cumin</div>
+                                            <div class="ingredient-item">1 tsp chili powder</div>
+                                            <div class="ingredient-item">1 cup shredded cheese</div>
+                                            <div class="ingredient-item">1/4 cup cilantro, chopped</div>
+                                            <div class="ingredient-item">1 lime, juiced</div>
+                                            <div class="ingredient-item">2 cups vegetable broth</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 375°F (190°C). Cut tops off peppers, remove seeds.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Sauté onion and garlic until soft. Add spices, cook 1 minute.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Add quinoa, broth, beans and corn. Bring to boil, then simmer 15 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Stir in half the cheese, lime juice and cilantro. Stuff peppers.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Top with remaining cheese. Bake 25-30 minutes until peppers are tender.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">280</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">8g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">42g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">14g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card" id="pork-tenderloin">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pork Tenderloin" class="recipe-img">
+                                <span class="recipe-badge">Weeknight Dinner</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Honey Garlic Pork Tenderloin</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 40 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 9 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 320 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Juicy pork tenderloin with a sticky honey garlic glaze, roasted with carrots and potatoes for a complete meal.</p>
+                                
+                                <input type="checkbox" id="pork-details" class="recipe-toggle">
+                                <label for="pork-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">1.5 lbs pork tenderloin</div>
+                                            <div class="ingredient-item">3 tbsp honey</div>
+                                            <div class="ingredient-item">4 cloves garlic, minced</div>
+                                            <div class="ingredient-item">2 tbsp soy sauce</div>
+                                            <div class="ingredient-item">1 tbsp Dijon mustard</div>
+                                            <div class="ingredient-item">1 tbsp apple cider vinegar</div>
+                                            <div class="ingredient-item">1 lb baby potatoes, halved</div>
+                                            <div class="ingredient-item">3 carrots, sliced</div>
+                                            <div class="ingredient-item">2 tbsp olive oil</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 400°F (200°C). Whisk honey, garlic, soy sauce, mustard and vinegar.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Toss potatoes and carrots with oil, salt and pepper. Roast for 15 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Sear pork in hot pan on all sides. Brush with half the glaze.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Add pork to roasting pan with vegetables. Roast 15-20 minutes until 145°F internal temp.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Let rest 5 minutes, slice and serve with remaining glaze.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">320</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">10g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">30g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card" id="eggplant-parm">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Eggplant Parmesan" class="recipe-img">
+                                <span class="recipe-badge">Vegetarian</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Eggplant Parmesan</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 1 hour 15 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 12 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 380 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Layers of crispy breaded eggplant, rich tomato sauce, and melted mozzarella. A vegetarian classic that satisfies everyone.</p>
+                                
+                                <input type="checkbox" id="eggplant-details" class="recipe-toggle">
+                                <label for="eggplant-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">2 large eggplants, sliced</div>
+                                            <div class="ingredient-item">1 cup flour</div>
+                                            <div class="ingredient-item">3 eggs, beaten</div>
+                                            <div class="ingredient-item">2 cups breadcrumbs</div>
+                                            <div class="ingredient-item">1/2 cup grated Parmesan</div>
+                                            <div class="ingredient-item">2 cups marinara sauce</div>
+                                            <div class="ingredient-item">2 cups shredded mozzarella</div>
+                                            <div class="ingredient-item">1/2 cup fresh basil, chopped</div>
+                                            <div class="ingredient-item">1 tsp dried oregano</div>
+                                            <div class="ingredient-item">1/2 tsp red pepper flakes</div>
+                                            <div class="ingredient-item">Olive oil for frying</div>
+                                            <div class="ingredient-item">Salt to taste</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Salt eggplant slices, let sit 30 minutes to draw out moisture. Pat dry.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Set up breading station: flour, eggs, and breadcrumbs mixed with Parmesan.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Dredge eggplant in flour, dip in egg, then coat with breadcrumbs.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Fry in batches until golden on both sides. Drain on paper towels.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Layer sauce, eggplant, mozzarella and herbs in baking dish. Repeat layers.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Bake at 375°F (190°C) for 25-30 minutes until bubbly and golden.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">380</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">18g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">38g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">20g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card" id="shrimp-scampi">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1625943555419-56a2cb596640?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Shrimp Scampi" class="recipe-img">
+                                <span class="recipe-badge">Seafood</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Lemon Garlic Shrimp Scampi</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 25 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 10 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 350 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Plump shrimp sautéed in garlic butter with white wine and lemon, served over linguine. An elegant yet quick dinner.</p>
+                                
+                                <input type="checkbox" id="scampi-details" class="recipe-toggle">
+                                <label for="scampi-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">1 lb large shrimp, peeled</div>
+                                            <div class="ingredient-item">8 oz linguine</div>
+                                            <div class="ingredient-item">4 tbsp butter</div>
+                                            <div class="ingredient-item">4 cloves garlic, minced</div>
+                                            <div class="ingredient-item">1/4 tsp red pepper flakes</div>
+                                            <div class="ingredient-item">1/2 cup white wine</div>
+                                            <div class="ingredient-item">1 lemon, zested and juiced</div>
+                                            <div class="ingredient-item">1/4 cup parsley, chopped</div>
+                                            <div class="ingredient-item">2 tbsp olive oil</div>
+                                            <div class="ingredient-item">Salt and pepper to taste</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Cook pasta according to package directions. Reserve 1/2 cup pasta water.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Heat oil and 2 tbsp butter in large skillet. Add shrimp, cook 2 minutes per side. Remove.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Add remaining butter, garlic and red pepper flakes. Cook 30 seconds until fragrant.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Deglaze with wine, simmer 2 minutes. Stir in lemon juice and zest.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Return shrimp to pan with pasta, tossing to coat. Add pasta water as needed.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Garnish with parsley and serve immediately.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">350</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">16g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">24g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Chef</h3>
+                    <p>With over 15 years of culinary experience, I'm passionate about creating unforgettable dining experiences and sharing my knowledge with aspiring chefs.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="classes.html">Cooking Classes</a></li>
+                        <li><a href="portfolio.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Foodville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> chef@culinaryportfolio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Connect with Us | Follow for Food Inspiration | © 2023 Chef's Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

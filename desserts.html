@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Portfolio | Desserts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                Chef's Portfolio
+            </a>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="signaturedishes.html">Signature Dishes</a></li>
+
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="recipes.html">Recipes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="appetizers.html">Appetizers</a></li>
+                            <li><a href="main-courses.html">Main Courses</a></li>
+                            <li><a href="desserts.html" class="active">Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="catering.html">Event Catering</a></li>
+                            <li><a href="classes.html">Cooking Classes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero desserts-hero">
+            <div class="hero-content">
+                <h1>Decadent Desserts</h1>
+                <p>Sweet creations to satisfy every craving and impress your guests</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="featured-recipe">
+                    <div class="featured-container">
+                        <div class="featured-img">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Featured Dessert">
+                        </div>
+                        <div class="featured-content">
+                            <span class="featured-badge">Chef's Special</span>
+                            <h2 class="featured-title">Molten Chocolate Lava Cakes</h2>
+                            <div class="featured-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="featured-description">Individual chocolate cakes with a gooey, molten center. Serve warm with vanilla ice cream for the ultimate dessert experience.</p>
+                            <a href="#lava-cakes" class="btn" style="background-color: white; color: var(--dark-green); align-self: flex-start;">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-section" id="desserts-section">
+                    <div class="recipes-container">
+                        <!-- Recipe 1 - Lava Cakes -->
+                        <div class="recipe-card" id="lava-cakes">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Chocolate Cake" class="recipe-img">
+                                <span class="recipe-badge">Decadent</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Molten Chocolate Lava Cakes</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 30 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 7 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 420 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Individual chocolate cakes with a gooey, molten center. Serve warm with vanilla ice cream for the ultimate dessert experience.</p>
+                                
+                                <input type="checkbox" id="lava-cake-details" class="recipe-toggle">
+                                <label for="lava-cake-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">6 oz high-quality dark chocolate</div>
+                                            <div class="ingredient-item">1/2 cup unsalted butter</div>
+                                            <div class="ingredient-item">2 whole eggs</div>
+                                            <div class="ingredient-item">2 egg yolks</div>
+                                            <div class="ingredient-item">1/4 cup granulated sugar</div>
+                                            <div class="ingredient-item">2 tbsp all-purpose flour</div>
+                                            <div class="ingredient-item">Pinch of salt</div>
+                                            <div class="ingredient-item">Powdered sugar for dusting</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 425°F (220°C). Butter and flour 4 ramekins.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Melt chocolate and butter together in double boiler, then cool slightly.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Whisk eggs, yolks and sugar until pale and thick (about 5 mins).</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Fold chocolate mixture into eggs, then fold in flour and salt.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Divide batter among ramekins. Bake 12-14 minutes until edges are set but center is soft.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Let sit 1 minute, then invert onto plates. Dust with powdered sugar.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">420</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">32g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">30g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">6g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recipe 2 - Cheesecake -->
+                        <div class="recipe-card" id="berry-cheesecake">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cheesecake" class="recipe-img">
+                                <span class="recipe-badge">No-Bake</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Berry Swirl Cheesecake</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 6 hours</span>
+                                    <span><i class="fas fa-utensils"></i> 10 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 380 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Creamy no-bake cheesecake with a graham cracker crust and vibrant mixed berry swirl. Refreshing and perfect for summer.</p>
+                                
+                                <input type="checkbox" id="cheesecake-details" class="recipe-toggle">
+                                <label for="cheesecake-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">2 cups graham cracker crumbs</div>
+                                            <div class="ingredient-item">1/2 cup melted butter</div>
+                                            <div class="ingredient-item">2 tbsp sugar</div>
+                                            <div class="ingredient-item">16 oz cream cheese, softened</div>
+                                            <div class="ingredient-item">1 cup powdered sugar</div>
+                                            <div class="ingredient-item">2 tsp vanilla extract</div>
+                                            <div class="ingredient-item">1 cup heavy cream, whipped</div>
+                                            <div class="ingredient-item">1 cup mixed berries</div>
+                                            <div class="ingredient-item">2 tbsp lemon juice</div>
+                                            <div class="ingredient-item">1 tbsp cornstarch</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Mix crumbs, melted butter and sugar. Press into 9" springform pan. Chill 30 mins.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Beat cream cheese until smooth. Add powdered sugar and vanilla.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Fold in whipped cream. Spread over crust.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Purée berries with lemon juice. Strain, then cook with cornstarch until thickened.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Drizzle berry sauce over cheesecake and swirl with knife.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Chill at least 4 hours, preferably overnight.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">380</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">30g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">4g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recipe 3 - Tiramisu -->
+                        <div class="recipe-card" id="tiramisu">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" alt="Tiramisu" class="recipe-img">
+                                <span class="recipe-badge">Classic</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Authentic Italian Tiramisu</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 45 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 9 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 350 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder. The ultimate no-bake Italian dessert.</p>
+                                
+                                <input type="checkbox" id="tiramisu-details" class="recipe-toggle">
+                                <label for="tiramisu-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">6 egg yolks</div>
+                                            <div class="ingredient-item">3/4 cup granulated sugar</div>
+                                            <div class="ingredient-item">16 oz mascarpone cheese</div>
+                                            <div class="ingredient-item">1 1/2 cups heavy cream</div>
+                                            <div class="ingredient-item">2 cups strong espresso, cooled</div>
+                                            <div class="ingredient-item">3 tbsp coffee liqueur (optional)</div>
+                                            <div class="ingredient-item">24 ladyfinger cookies</div>
+                                            <div class="ingredient-item">1/4 cup cocoa powder</div>
+                                            <div class="ingredient-item">Dark chocolate shavings</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Whisk yolks and sugar over double boiler until pale and thick (about 10 mins).</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Remove from heat, beat in mascarpone until smooth.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Whip cream to stiff peaks, then fold into mascarpone mixture.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Mix espresso with liqueur. Quickly dip ladyfingers (1-2 seconds per side).</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Layer dipped ladyfingers, then cream mixture in 9x13" dish. Repeat layers.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Chill 6 hours or overnight. Dust with cocoa and chocolate shavings before serving.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">350</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">24g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">6g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 4 - Crème Brûlée -->
+                        <div class="recipe-card" id="creme-brulee">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1608500218807-8a0078155a4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Crème Brûlée" class="recipe-img">
+                                <span class="recipe-badge">French</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Classic Crème Brûlée</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 4 hours</span>
+                                    <span><i class="fas fa-utensils"></i> 6 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 450 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Silky vanilla custard with a crisp caramelized sugar topping. The perfect balance of creamy and crunchy textures.</p>
+                                
+                                <input type="checkbox" id="brulee-details" class="recipe-toggle">
+                                <label for="brulee-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">2 cups heavy cream</div>
+                                            <div class="ingredient-item">1 vanilla bean (or 1 tsp extract)</div>
+                                            <div class="ingredient-item">5 egg yolks</div>
+                                            <div class="ingredient-item">1/2 cup granulated sugar</div>
+                                            <div class="ingredient-item">Pinch of salt</div>
+                                            <div class="ingredient-item">3 tbsp turbinado sugar (for topping)</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 325°F (160°C). Heat cream and vanilla (scraped bean) until just simmering.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Whisk yolks, sugar and salt until pale. Slowly whisk in warm cream.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Strain mixture into 4 ramekins. Place in baking dish, add hot water halfway up sides.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Bake 30-35 minutes until set but still jiggly in center. Cool, then chill 4 hours.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Sprinkle tops with turbinado sugar. Caramelize with torch or broiler until golden.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Let sit 5 minutes before serving to allow sugar to harden.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">450</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">36g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">4g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 5 - Apple Pie -->
+                        <div class="recipe-card" id="apple-pie">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1562007908-859b4ba9a1a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Apple Pie" class="recipe-img">
+                                <span class="recipe-badge">American Classic</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Perfect Apple Pie</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 2 hours</span>
+                                    <span><i class="fas fa-utensils"></i> 12 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 380 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Flaky buttery crust filled with cinnamon-spiced apples. The quintessential American dessert with a perfect crust-to-filling ratio.</p>
+                                
+                                <input type="checkbox" id="pie-details" class="recipe-toggle">
+                                <label for="pie-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">2 1/2 cups all-purpose flour</div>
+                                            <div class="ingredient-item">1 tsp salt</div>
+                                            <div class="ingredient-item">1 cup unsalted butter, chilled</div>
+                                            <div class="ingredient-item">6-8 tbsp ice water</div>
+                                            <div class="ingredient-item">6-7 medium apples, peeled and sliced</div>
+                                            <div class="ingredient-item">3/4 cup brown sugar</div>
+                                            <div class="ingredient-item">2 tbsp lemon juice</div>
+                                            <div class="ingredient-item">2 tsp cinnamon</div>
+                                            <div class="ingredient-item">1/4 tsp nutmeg</div>
+                                            <div class="ingredient-item">1/4 tsp allspice</div>
+                                            <div class="ingredient-item">2 tbsp butter, diced</div>
+                                            <div class="ingredient-item">1 egg, beaten (for egg wash)</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Mix flour and salt. Cut in butter until pea-sized. Add water until dough forms.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Divide dough in half, chill 1 hour. Roll out bottom crust, place in pie dish.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Toss apples with sugar, lemon juice and spices. Let sit 30 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Fill crust with apples, dot with butter. Cover with top crust, seal edges.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Cut vents, brush with egg wash. Bake at 375°F (190°C) for 50-60 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Cool 2 hours before slicing to allow filling to set.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">380</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">18g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">55g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">4g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 6 - Panna Cotta -->
+                        <div class="recipe-card" id="panna-cotta">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Panna Cotta" class="recipe-img">
+                                <span class="recipe-badge">Italian</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Vanilla Bean Panna Cotta</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 6 hours</span>
+                                    <span><i class="fas fa-utensils"></i> 7 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 320 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Silky Italian custard with real vanilla bean, served with fresh berry coulis. Elegant yet simple to prepare.</p>
+                                
+                                <input type="checkbox" id="panna-details" class="recipe-toggle">
+                                <label for="panna-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">2 cups heavy cream</div>
+                                            <div class="ingredient-item">1/2 cup whole milk</div>
+                                            <div class="ingredient-item">1/2 cup sugar</div>
+                                            <div class="ingredient-item">1 vanilla bean, split</div>
+                                            <div class="ingredient-item">2 tsp gelatin</div>
+                                            <div class="ingredient-item">2 tbsp cold water</div>
+                                            <div class="ingredient-item">Pinch of salt</div>
+                                            <div class="ingredient-item">1 cup mixed berries (for coulis)</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Sprinkle gelatin over cold water, let bloom 5 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Heat cream, milk, sugar and vanilla (scraped seeds and pod) until steaming.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Remove from heat, stir in gelatin until dissolved. Strain.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Pour into 6 ramekins, chill 4+ hours until set.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Purée berries with 1 tbsp sugar for coulis.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>To serve, dip ramekins in hot water for 10 seconds, invert onto plates. Drizzle with coulis.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">320</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">24g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">25g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">3g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 7 - Chocolate Mousse -->
+                        <div class="recipe-card" id="chocolate-mousse">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1600353068440-63638efce243?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chocolate Mousse" class="recipe-img">
+                                <span class="recipe-badge">French</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Dark Chocolate Mousse</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 4 hours</span>
+                                    <span><i class="fas fa-utensils"></i> 6 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 350 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Light yet rich chocolate mousse made with just a few quality ingredients. The perfect make-ahead dessert for entertaining.</p>
+                                
+                                <input type="checkbox" id="mousse-details" class="recipe-toggle">
+                                <label for="mousse-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">7 oz high-quality dark chocolate</div>
+                                            <div class="ingredient-item">3 tbsp unsalted butter</div>
+                                            <div class="ingredient-item">4 eggs, separated</div>
+                                            <div class="ingredient-item">1/4 cup granulated sugar</div>
+                                            <div class="ingredient-item">Pinch of salt</div>
+                                            <div class="ingredient-item">1/2 tsp vanilla extract</div>
+                                            <div class="ingredient-item">Whipped cream for garnish</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Melt chocolate and butter together, let cool slightly.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Whisk egg yolks with half the sugar until pale and thick.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Fold chocolate mixture into yolks. Add vanilla.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Beat egg whites with salt until foamy. Gradually add remaining sugar, beat to stiff peaks.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Gently fold whites into chocolate mixture in three additions.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Divide among glasses, chill 4+ hours. Serve with whipped cream.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">350</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">25g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">28g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">6g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 8 - Lemon Tart -->
+                        <div class="recipe-card" id="lemon-tart">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1606914469631-bb0c2a92773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Lemon Tart" class="recipe-img">
+                                <span class="recipe-badge">Citrus</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">French Lemon Tart</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 2 hours</span>
+                                    <span><i class="fas fa-utensils"></i> 10 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 320 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Buttery shortcrust pastry filled with tangy lemon curd. The perfect balance of sweet and tart flavors.</p>
+                                
+                                <input type="checkbox" id="tart-details" class="recipe-toggle">
+                                <label for="tart-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">1 1/4 cups all-purpose flour</div>
+                                            <div class="ingredient-item">1/2 cup powdered sugar</div>
+                                            <div class="ingredient-item">1/2 cup cold butter, cubed</div>
+                                            <div class="ingredient-item">1 egg yolk</div>
+                                            <div class="ingredient-item">4 eggs</div>
+                                            <div class="ingredient-item">3/4 cup granulated sugar</div>
+                                            <div class="ingredient-item">1/2 cup lemon juice (about 3 lemons)</div>
+                                            <div class="ingredient-item">1 tbsp lemon zest</div>
+                                            <div class="ingredient-item">1/2 cup heavy cream</div>
+                                            <div class="ingredient-item">Pinch of salt</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Pulse flour, powdered sugar and butter in food processor until crumbly.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Add yolk, pulse until dough forms. Press into tart pan, chill 30 mins.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Preheat oven to 350°F (175°C). Blind bake crust 15 mins, remove weights, bake 5 more mins.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Whisk eggs, sugar, lemon juice and zest. Stir in cream.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Pour filling into warm crust. Bake 25-30 mins until set but slightly wobbly.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Cool completely. Dust with powdered sugar before serving.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">320</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">18g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">36g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">5g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recipe 9 - Bread Pudding -->
+                        <div class="recipe-card" id="bread-pudding">
+                            <div class="recipe-img-container">
+                                <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Bread Pudding" class="recipe-img">
+                                <span class="recipe-badge">Comfort Food</span>
+                            </div>
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Caramel Bread Pudding</h3>
+                                <div class="recipe-meta">
+                                    <span><i class="far fa-clock"></i> 1 hour 15 mins</span>
+                                    <span><i class="fas fa-utensils"></i> 9 ingredients</span>
+                                    <span><i class="fas fa-fire"></i> 420 cal/serving</span>
+                                </div>
+                                <p class="recipe-description">Rich custard-soaked brioche with swirls of caramel sauce. Served warm with vanilla ice cream for the ultimate comfort dessert.</p>
+                                
+                                <input type="checkbox" id="pudding-details" class="recipe-toggle">
+                                <label for="pudding-details" class="recipe-toggle-label">View Full Recipe</label>
+                                
+                                <div class="recipe-details">
+                                    <div class="detail-section">
+                                        <h4>Ingredients</h4>
+                                        <div class="ingredients-list">
+                                            <div class="ingredient-item">8 cups brioche or challah, cubed</div>
+                                            <div class="ingredient-item">4 eggs</div>
+                                            <div class="ingredient-item">2 cups whole milk</div>
+                                            <div class="ingredient-item">1 cup heavy cream</div>
+                                            <div class="ingredient-item">3/4 cup brown sugar</div>
+                                            <div class="ingredient-item">1 tsp vanilla extract</div>
+                                            <div class="ingredient-item">1/2 tsp cinnamon</div>
+                                            <div class="ingredient-item">1/4 tsp nutmeg</div>
+                                            <div class="ingredient-item">1/2 cup caramel sauce</div>
+                                        </div>
+                                        
+                                        <h4>Instructions</h4>
+                                        <div class="instructions-list">
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">1</div>
+                                                <div>Preheat oven to 350°F (175°C). Butter a 9x13" baking dish.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">2</div>
+                                                <div>Spread bread cubes in dish. Whisk eggs, milk, cream, sugar and spices.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">3</div>
+                                                <div>Pour custard over bread, pressing down to soak. Drizzle with half the caramel.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">4</div>
+                                                <div>Let sit 30 minutes for bread to absorb liquid.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">5</div>
+                                                <div>Bake 45-50 minutes until puffed and golden. Let cool 15 minutes.</div>
+                                            </div>
+                                            <div class="instruction-item">
+                                                <div class="instruction-number">6</div>
+                                                <div>Serve warm with remaining caramel sauce and ice cream.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h4>Nutrition Facts (per serving)</h4>
+                                        <div class="nutrition-facts">
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">420</div>
+                                                <div class="nutrition-label">Calories</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">22g</div>
+                                                <div class="nutrition-label">Fat</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">48g</div>
+                                                <div class="nutrition-label">Carbs</div>
+                                            </div>
+                                            <div class="nutrition-item">
+                                                <div class="nutrition-value">8g</div>
+                                                <div class="nutrition-label">Protein</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Chef</h3>
+                    <p>With over 15 years of culinary experience, I'm passionate about creating unforgettable dining experiences and sharing my knowledge with aspiring chefs.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="classes.html">Cooking Classes</a></li>
+                        <li><a href="portfolio.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Foodville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> chef@culinaryportfolio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Connect with Us | Follow for Food Inspiration | © 2023 Chef's Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

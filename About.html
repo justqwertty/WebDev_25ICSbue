@@ -3,16 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Document</title>
+    <title>Chef's Portfolio | About me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header><nav><ul>
-        <li><a href="index.html"> Home </a></li>
-        <li><a href="About.html">About</a></li>
-    
-    </ul>
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                Chef's Portfolio
+            </a>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    
+                    <li><a href="signaturedishes.html">Signature Dishes</a></li>
 
-</nav></header>
+                    <li><a href="blog.html">Blog</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="recipes.html">Recipes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="appetizers.html" class="active">Appetizers</a></li>
+                            <li><a href="main-courses.html">Main Courses</a></li>
+                            <li><a href="desserts.html">Desserts</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="catering.html">Event Catering</a></li>
+                            <li><a href="classes.html">Cooking Classes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="about.html">About Me <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="philosophy.html">Cooking Philosophy</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="chef-image">
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Professional Chef in Kitchen">
+                </div>
+                <div class="about-text">
+                    <h2>About Chef Michael</h2>
+                    <h3>Culinary Artist & Flavor Innovator</h3>
+                    <p>With over 15 years of experience in world-class kitchens from Paris to Tokyo, Chef Michael brings a unique fusion of traditional techniques and modern innovation to every dish he creates.</p>
+                    <p>Born into a family of restaurateurs, Chef Michael developed a passion for cooking at an early age. After graduating from Le Cordon Bleu in Paris, he honed his skills under several Michelin-starred chefs before developing his own distinctive style.</p>
+                    <p>Specializing in farm-to-table cuisine with global influences, Chef Michael believes in letting high-quality, seasonal ingredients shine through simple yet sophisticated preparations.</p>
+                    <p class="signature">"Cooking is not just about feeding people - it's about creating memories, telling stories, and bringing joy through every bite."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section social">
+        <div class="container">
+            <div class="section-title">
+                <h2>Follow Me</h2>
+                <p>Stay connected for the latest updates, recipes, and culinary adventures</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+            </div>
+            <p class="social-text">Follow for behind-the-scenes content and professional updates</p>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Newsletter</h2>
+            <p>Stay updated with the latest recipes and culinary adventures</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <p>We promise to only send you the good stuff!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Chef</h3>
+                    <p>With over 15 years of culinary experience, I'm passionate about creating unforgettable dining experiences and sharing my knowledge with aspiring chefs.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="#">Cooking Classes</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Foodville</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> chef@culinaryportfolio.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Connect with Us | Follow for Food Inspiration | © 2023 Chef's Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
 </body>
 </html>
